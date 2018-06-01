@@ -1,0 +1,57 @@
+@keyframes blurred-bg {
+  0% {
+    -webkit-filter: blur(0px); }
+  100% {
+    -webkit-filter: blur(10px); } }
+header {
+  text-align: left;
+  width: 100%;
+  height: 350px;
+  background: black;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase; }
+
+.background-img {
+  background: black url("http://localhost/react-galeria/images/architektura/pexels-photo-261187.jpeg");
+  opacity: 0.75;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  z-index: 1;
+  /*   -webkit-filter: blur(4px); */
+  -webkit-animation: blurred-bg 2s 1 forwards;
+  box-sizing: border-box; }
+
+header > *:not(.background-img) {
+  z-index: 5;
+  position: relative; }
+
+.text {
+  margin-top: 150px;
+  color: white; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 1em 0;
+  padding: 0; }
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 500; }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 44px;
+  font-weight: 500;
+  font-size: 16px; }
+
+/*# sourceMappingURL=style.css.map */

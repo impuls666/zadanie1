@@ -13,7 +13,7 @@ header {
   text-transform: uppercase; }
 
 .background-img {
-  background: black url("http://localhost/react-galeria/images/architektura/pexels-photo-261187.jpeg");
+  background: black url("/images/architektura/pexels-photo-261187.jpeg");
   opacity: 0.75;
   background-size: cover;
   background-position: 50% 60%;
